@@ -6,5 +6,5 @@ with stg_customers as (
     from dbt-tutorial.jaffle_shop.customers
     )
 
-select * from customer_data
-
+select * from stg_customers
+--`dbt-analytics-engineer-414412`.`dbt_asolanki`.`stg_customers`
