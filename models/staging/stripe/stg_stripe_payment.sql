@@ -14,4 +14,6 @@ select
         then 'true'
         else 'false'
     end as is_completed_payment
-    from {{ source('stripe', 'payment') }}
+from dbt-tutorial.stripe.payment
+
+    
