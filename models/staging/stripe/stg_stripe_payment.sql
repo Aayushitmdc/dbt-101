@@ -13,7 +13,8 @@ select
         when status = 'succcess' 
         then 'true'
         else 'false'
-    end as is_completed_payment
-from dbt-tutorial.stripe.payment
+    end as is_completed_payment,
+    created as created_date
+from {{ source('stripe', 'payment') }}
 
     
