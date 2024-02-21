@@ -45,4 +45,4 @@ models:
     marts:
       +materialized: table
     sample:
-      +materalized: table
+      +materalized: view
