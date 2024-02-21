@@ -37,6 +37,7 @@ clean-targets:         # directories to be removed by `dbt clean`
 
 models:
   my_new_project:
+<<<<<<< HEAD
     # Applies to all files under models/example/
     staging:
       +materialized: view
@@ -46,3 +47,7 @@ models:
       +materialized: table
     sample:
       +materalized: table
+=======
+    +materialized: view
+    
+>>>>>>> 5387e37651bc0ce00a760a0278166f0888307328
