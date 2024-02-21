@@ -1,0 +1,51 @@
+profiles:
+            my_new_project:
+              target: dev
+              outputs:
+                dev:
+                  type: bigquery
+                  method: service-account-json
+                  project: dbt-analytics-engineer-414412
+                  dataset: dbt_asolanki
+                  threads: 4
+                  keyfile_json:
+                    type: service_account
+                    project_id: dbt-analytics-engineer-414412
+                    private_key_id: 34aaf841a54f636aa2f998de1b77c03394097ddd
+                    private_key: |
+                      -----BEGIN PRIVATE KEY-----
+                      MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCyLefkqlyVGhmN
+                      xA0N5b3slW9TbLfzh9Vbr4vreEqXXLylZwihLBlknM4kweRBqYr2OZO7YwdnzsBX
+                      kl0QV451xo4buO/PExILpv3ceyTygJiRvtrzWHj+bq295yMmnjLFC7o9CE1LcgWt
+                      yfa/V889S8otOmrKEjlgLGMO3pvKgOfgUJ1ENs2F/QB+xOW0Wtb4woZRImb8V0p6
+                      HowHPBwAGHUxK4U9uxv4Mcx6RorCJjhwB/YIQmzXQwJyECM54r1yWecAAQthdVGw
+                      z9vr/pkYWdMG56dH9wLxSY98vrDPnpHv7c8vCHGNlJTuKJJP4MpfwAfdfVIrCX4/
+                      CUcXtBubAgMBAAECggEAKraLfQsD57BaiNwDHx5Acbr+9Xo9/LDGylRiT9/FzdQq
+                      2uHAtVZLfg2C81fRnpYEnHMAAa9DIrTy8etByP2cRoqDHY0vW64gKM/u0lBo8oM2
+                      T9X3SdefJasllj0W9ZZ96DOgASqA0QGz783XC1aC9Rg6jq4O1IMa4v2w/2sI4Lmv
+                      ccCzqcFYstXW41ogQevujmtucJHdinBN+qXdzUN2ys6iS4ck387gZ8Jd/lk6DNW3
+                      hqhtsZOvXAzUYg3dFhvQlBwIhdtMqq3LFX8ODjeaBuYjTlOeDxZBqBwAra1Q68lh
+                      2RZnxw7o2zOgeAyuKivg+z7Q9dixrMbviWd/m7YpeQKBgQD580kIt8CuwnpVLB22
+                      RivAu/EEX4YwPx34OUc46e7u/OHTtfK+9lIUiwL1owArsJQs2srPVkTqA0U1/+hj
+                      o+lxGzDr9e807LZaePiS1VmRYC0T+eXyjHXJJMj6H3Palh1ud7mnb8WfmoCEzKR5
+                      INwtp+zq9m6ZOLihrYAzlr1BGQKBgQC2fevABA6j/MDpb4b8Iixwdujgbesk6nHR
+                      G/4sIH/DIefqu2ymlhX2bcPgNPmI42k4hrJMEUB5x9csPKvuBs0Fp5sZblWuTlCz
+                      0Wa2N/s3u25apphJ1cI/EHL7ENIdbFj4NyR5QzrWSDowrU6VKD0YggW801itG9uV
+                      InHhWl2U0wKBgQCDVrBI0W2BJxXrDWxrbAHvm5Iw7xTu4yuXVFm1cU8o616qxY/R
+                      glNtEgKzGjyruHSUAT/SpQ0/PgqvLlJpkSbIVTZmtutEDyJe9fQAC/WtqzDkr0qC
+                      IgZ+dELbE43oDTtX4bd/YP8iN6hSn8nJEFhB8VxPtsA06RYzdpzH/uxheQKBgHfn
+                      PGKpR8VPaKD3+kTnXzN1rYToM7vJnoa6UcJEiC15tZtxEe5SZpPHgw9pPxtF7/iH
+                      59Y675YUS7hxFLYMGeFBQpLu/7TLGBNN3qKTHah8qgE9vImmvT4aXLHBV4ylh79u
+                      27QhDCOGyVT6ScuO6LWVmJd8daMnzpqqSxC6AwqpAoGADYx2nIyuoacNYJDZLiY2
+                      O1O+zH7IlfyfF77Z4lrte6QdWz92GTSPft1hmpCKyidZ0rA96AM2ilNJOu2LwJ87
+                      eSu+gU+295LGVmTiE4kn9IIpSs8w79EKgNUvJSiFEnXqe+KoHl1igP8WsXHT3h+O
+                      7DNPL/31vCNyTY+zkwB+Cf0=
+                      -----END PRIVATE KEY-----
+                    client_email: dbt-user@dbt-analytics-engineer-414412.iam.gserviceaccount.com
+                    client_id: '116268953138631610406'
+                    auth_uri: https://accounts.google.com/o/oauth2/auth
+                    token_uri: https://oauth2.googleapis.com/token
+                    auth_provider_x509_cert_url: https://www.googleapis.com/oauth2/v1/certs
+                    client_x509_cert_url: >-
+                      https://www.googleapis.com/robot/v1/metadata/x509/dbt-user%40dbt-analytics-engineer-414412.iam.gserviceaccount.com
+                    universe_domain: googleapis.com
