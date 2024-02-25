@@ -9,8 +9,6 @@ workflow:
     - name: dbt-workflow-job-v2
       title: dbt Sample Test Jobs for workflow
       spec:
-#        configs:
-#          profiles.yml: /Users/rakesh/dataos/dataos-dbt/etc/dataos/config/profiles.yml
         stack: dbt+python:1.0
         compute: runnable-default
         resources:
@@ -30,7 +28,7 @@ workflow:
                   type: bigquery
                   method: service-account-json
                   project: dbt-analytics-engineer-414412
-                  dataset: my_first_dbt_model
+                  dataset: dbt_asolanki
                   threads: 4
                   keyfile_json:
                     type: service_account
@@ -73,7 +71,6 @@ workflow:
                     client_x509_cert_url: >-
                       https://www.googleapis.com/robot/v1/metadata/x509/dbt-user%40dbt-analytics-engineer-414412.iam.gserviceaccount.com
                     universe_domain: googleapis.com
-
           dbt_project:
             name: 'my_new_project'
             version: '1.0.0'
