@@ -1,11 +1,3 @@
--- models/my_model.sql
--- models/my_model.sql
--- -- models/my_model.sql
-
--- {{ config(
---   materialized=None
--- ) }}
-
 
 with abcd as (
    select id,
