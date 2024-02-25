@@ -1,0 +1,1 @@
+select id, customer_name from {{ ref("sample")}} 
