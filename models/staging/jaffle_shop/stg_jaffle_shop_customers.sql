@@ -1,4 +1,8 @@
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> a525010b907af905870ed0c6cc115af3b6b70b16
 select 
     id as customer_id,
     concat(first_name, ' ', last_name) as customer_name,
