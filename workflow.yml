@@ -31,7 +31,7 @@ workflow:
                   type: bigquery
                   method: service-account-json
                   project: dbt-analytics-engineer-414412
-                  dataset: dbt_asolanki
+                  dataset: my_first_dbt_model
                   threads: 4
                   keyfile_json:
                     type: service_account
