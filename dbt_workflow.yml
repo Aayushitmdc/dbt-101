@@ -1,5 +1,4 @@
-name: dbt-workflow-v01
-version: v1
+name: dbt-workflow012
 type: workflow
 tags:
   - workflow
@@ -7,8 +6,8 @@ description: DBT Sample Workflow
 workspace: public
 workflow:
   dag:
-    - name: dbt-job-v2
-      title: dbt Sample Test Jobs
+    - name: dbt-workflow-job-v2
+      title: dbt Sample Test Jobs for workflow
       spec:
 #        configs:
 #          profiles.yml: /Users/rakesh/dataos/dataos-dbt/etc/dataos/config/profiles.yml
@@ -31,7 +30,7 @@ workflow:
                   type: bigquery
                   method: service-account-json
                   project: dbt-analytics-engineer-414412
-                  dataset: dbt_asolanki
+                  dataset: my_first_dbt_model
                   threads: 4
                   keyfile_json:
                     type: service_account
@@ -74,7 +73,7 @@ workflow:
                     client_x509_cert_url: >-
                       https://www.googleapis.com/robot/v1/metadata/x509/dbt-user%40dbt-analytics-engineer-414412.iam.gserviceaccount.com
                     universe_domain: googleapis.com
-         
+
           dbt_project:
             name: 'my_new_project'
             version: '1.0.0'
@@ -92,8 +91,7 @@ workflow:
               - "dbt_packages"
             models:
               my_new_project:
-                example:
                   +materialized: view
           dbt_packages:
             packages:
-              - git: "https://github.com/pyjs-tmdc/dbt-test.git"
+              - git: "https://github.com/Aayushitmdc/dbt-101.git"
