@@ -1,10 +1,4 @@
 
-{{
-config(
-materialized='table'
-)
-}}
-
 select 
     id as customer_id,
     concat(first_name, ' ', last_name) as customer_name,
