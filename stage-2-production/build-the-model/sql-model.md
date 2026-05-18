@@ -1,0 +1,7 @@
+---
+icon: database
+---
+
+# SQL Model
+
+***
